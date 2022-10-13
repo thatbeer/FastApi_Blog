@@ -1,4 +1,4 @@
-from sqlite3 import Date, Timestamp
+from sqlalchemy.orm import Session
 from db.database import Base
 from sqlalchemy import Column , Integer , String ,DateTime
 
@@ -11,3 +11,5 @@ class DbPost(Base):
     content = Column(String)
     creator = Column(String)
     Timestamp = Column(DateTime)
+    
+    
